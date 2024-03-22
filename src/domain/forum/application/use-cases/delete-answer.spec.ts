@@ -1,9 +1,9 @@
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { InMemoryAnswersRepository } from 'test/repositories/in-memory-answers-repository'
 import { DeleteAnswerUseCase } from './delete-answer'
-import { makeAnswer } from 'test/repositories/factories/make-answer'
-import { NotAllowedError } from './errors/not-allowed-error'
-import { makeAnswerAttachment } from 'test/repositories/factories/make-answer-attachment'
+import { makeAnswer } from 'test/factories/make-answer'
+import { NotAllowedError } from '@/core/errors/errors/not-allowed-error'
+import { makeAnswerAttachment } from 'test/factories/make-answer-attachment'
 import { InMemoryAnswerAttachmentsRepository } from 'test/repositories/in-memory-answer-attachments-repository'
 
 let inMemoryAnswerAttachmentsRepository: InMemoryAnswerAttachmentsRepository
